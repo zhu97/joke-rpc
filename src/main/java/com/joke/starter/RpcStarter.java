@@ -12,9 +12,9 @@ import java.util.Map;
 
 public class RpcStarter implements ApplicationListener<ContextRefreshedEvent> {
 
-    private Register register;
+    private final Register register;
 
-    private JokeRpcProperties jokeRpcProperties;
+    private final JokeRpcProperties jokeRpcProperties;
 
     public RpcStarter(Register register, JokeRpcProperties jokeRpcProperties) {
         this.register = register;
