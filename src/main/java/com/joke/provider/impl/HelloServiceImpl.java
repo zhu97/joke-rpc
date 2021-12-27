@@ -1,9 +1,9 @@
 package com.joke.provider.impl;
 
-import com.joke.annotation.JokeProvider;
+import com.joke.annotation.JokeService;
 import com.joke.provider.HelloService;
 
-@JokeProvider(value = "helloService")
+@JokeService(HelloService.class)
 public class HelloServiceImpl implements HelloService {
 
     @Override

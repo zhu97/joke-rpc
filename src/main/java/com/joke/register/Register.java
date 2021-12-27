@@ -4,5 +4,7 @@ import java.util.Map;
 
 public interface Register {
 
-    void register(Map<String, Object> beansWithAnnotation);
+    void register(Map<String, Object> serviceMap);
+
+    void unRegister();
 }

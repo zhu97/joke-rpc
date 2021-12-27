@@ -1,10 +1,10 @@
 package com.joke.consumer;
 
-import com.joke.annotation.JokeConsumer;
 import com.joke.annotation.JokeInject;
+import com.joke.annotation.JokeService;
 import com.joke.provider.HelloService;
 
-@JokeConsumer
+@JokeService(HelloCustomer.class)
 public class HelloCustomer {
 
     @JokeInject("helloService")
